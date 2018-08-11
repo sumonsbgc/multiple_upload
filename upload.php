@@ -5,7 +5,7 @@ $fileType       = $_FILES['file']['type'];
 $fileTmpName    = $_FILES['file']['tmp_name'];
 $fileSize       = $_FILES['file']['size'];
 $fileError      = $_FILES['file']['error'];
-
+$prefix         = $_POST['prefix'];
 
 $uploads_dir = 'upload';
 
@@ -15,7 +15,7 @@ foreach ($fileError as $key => $error) {
         $tmpName = $fileTmpName[$key];
 
         $ext = pathinfo($fileName[$key], PATHINFO_EXTENSION );
-        $name = strstr(pathinfo($fileName[$key], PATHINFO_FILENAME), "-min", true);
+        $name = strstr(pathinfo($fileName[$key], PATHINFO_FILENAME), "{$prefix}", true);
         $name = $name.'.'.$ext;
 
         move_uploaded_file($tmpName, "$uploads_dir/$name");

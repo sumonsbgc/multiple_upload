@@ -15,7 +15,11 @@
             <div class="col-lg-12">
                 <form action="upload.php" method="post" enctype="multipart/form-data">
                     <div class="form-group">
-                        <label for="exampleFormControlFile1">Example file input</label>
+                        <label for="prefix"></label>
+                        <input type="text" name="prefix" class="form-control" id="prefix">
+                    </div>                    
+                    <div class="form-group">
+                        <label for="file_upload">Example file input</label>
                         <input type="file" name="file[]" class="form-control-file" id="file_upload" multiple>
                     </div>
                     <button class="btn btn-primary" type="submit">Submit</button>
