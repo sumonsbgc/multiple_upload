@@ -16,8 +16,12 @@
                 <form action="upload.php" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="prefix"></label>
-                        <input type="text" name="prefix" class="form-control" id="prefix">
-                    </div>                    
+                        <input type="text" name="img_name" class="form-control" id="prefix" placeholder="Image Name">
+                    </div>                
+                    <div class="form-group">
+                        <label for="prefix"></label>
+                        <input type="text" name="prefix" class="form-control" id="prefix" placeholder="Remove Last String">
+                    </div>
                     <div class="form-group">
                         <label for="file_upload">Example file input</label>
                         <input type="file" name="file[]" class="form-control-file" id="file_upload" multiple>
