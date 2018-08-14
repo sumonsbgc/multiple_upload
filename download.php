@@ -42,7 +42,6 @@ curl_close($curl_init);
 // curl_setopt($ch, CURLOPT_BINARYTRANSFER, true);
 
 // curl_setopt($ch, CURLOPT_SSL_VERIFYSTATUS, true);
-// curl_setopt($ch, CURLOPT_HEADER, true);
 // curl_setopt($ch, CURLOPT_HTTPGET, false);
 // curl_setopt($ch, CURLOPT_HTTPPOST, false);
 
